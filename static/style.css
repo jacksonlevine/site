@@ -1,0 +1,17 @@
+
+/* Apply link styling to all <a> tags with hx-get */
+a[hx-get] {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer; /* Make it clear the text is clickable */
+}
+a[hx-get]:hover {
+    color: darkblue; /* Optional: Change color on hover */
+}
+
+
+img.thumb {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}

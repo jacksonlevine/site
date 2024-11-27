@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jl software</title>
+    <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image: url('/static/sky.png'); background-repeat: repeat;">
+
+
+    <div id="topbanner" style="display: flex; justify-content: center; align-items: center">
+        <div id="topbannerinner" style="justify-content: center; align-items: center; width: 60%">
+            <img src="static/logo.svg">
+            <div style="display:flex; flex-direction: row;column-gap: 50px ">
+                <h3>jl games and software</h3>
+                <a hx-get="/pages/home" hx-target="#area" hx-swap="innerHTML">Home</a>
+                <a hx-get="/pages/downloads" hx-target="#area" hx-swap="innerHTML">Downloads</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="area" hx-get="/home" hx-trigger="load" hx-swap="innerHTML" hx-target="this" style="margin: 0% 20% 0% 20%">
+    </div>
+
+
+</body>
+</html>
